@@ -1,0 +1,8 @@
+services:
+    _defaults:
+        autoconfigure: true
+        autowire: true
+
+    DeEs\ContaoArticleAliasPicker\:
+        resource: ../src
+        exclude: ../src/{ContaoManager,ContaoArticleAliasPickerBundle.php}

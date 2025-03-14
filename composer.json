@@ -1,0 +1,49 @@
+{
+    "name": "de-es/contao-article-alias-picker",
+    "description": "Contao extension providing an article alias insert tag and an article alias picker",
+    "type": "contao-bundle",
+    "license": "LGPL-3.0-or-later",
+    "homepage": "https://github.com/de-es/contao-article-alias-picker",
+    "authors": [
+        {
+            "name": "Dennis Schmidt",
+            "homepage": "https://de-es.de",
+            "role": "Developer"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/de-es/contao-article-alias-picker/issues",
+        "source": "https://github.com/de-es/contao-article-alias-picker"
+    },
+    "require": {
+        "php": ">=8.1",
+        "contao/core-bundle": "^5.3"
+    },
+    "require-dev": {
+        "contao/easy-coding-standard": "^6.0",
+        "contao/rector": "^1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "DeEs\\ContaoArticleAliasPicker\\": "src/"
+        }
+    },
+    "config": {
+        "allow-plugins": {
+            "contao-components/installer": true,
+            "php-http/discovery": false,
+            "dealerdirect/phpcodesniffer-composer-installer": true
+        }
+    },
+    "extra": {
+        "contao-manager-plugin": "DeEs\\ContaoArticleAliasPicker\\ContaoManager\\Plugin"
+    },
+    "scripts": {
+        "all": [
+            "@ecs",
+            "@rector"
+        ],
+        "ecs": "@php vendor/bin/ecs check --fix",
+        "rector": "@php vendor/bin/rector"
+    }
+}
