@@ -38,8 +38,6 @@ class ArticleAliasPickerProvider extends AbstractInsertTagPickerProvider impleme
 
     public function getName(): string
     {
-        $GLOBALS['TL_CSS'][] = 'bundles/contaoarticlealiaspicker/backend.css';
-
         return 'articleAliasPicker';
     }
 
