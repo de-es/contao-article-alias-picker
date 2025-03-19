@@ -1,4 +1,4 @@
-# de-es/contao-article-alias-picker
+# contao-article-alias-picker
 
 `de-es/contao-article-alias-picker` ist eine Erweiterung für [Contao CMS](https://contao.org/).
 
